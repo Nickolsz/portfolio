@@ -46,14 +46,15 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Email to Sankey Graph Projet</h1>
-							<video width="1080" height="720" controls>
-								<source src="images/Sankey.mp4" type="video/mp4">
-								<source src="images/Sankey.mp4" type="video/ogg">
-							  </video>
-							  <p></p>
-							<p>As we all know the job hunt is a long and winding road. Constantly sending applications, and receiving emails back whether it be just for the application, a rejection, an interview, or even an offer if you are lucky. This often leads to a full inbox, and keeping track of your progress quickly becomes hard to do with so many emails pouring in. While scrolling Reddit one day I saw a user post a chart along with the title "I finally got a job after 1000 applications." The chart they had used was a sankey graph, which is used to present flows. I loved this idea of keeping track of the ongoing flow of my job hunt, but the thought of manually entering in all of the data was terrible. This is what spawned the idea for this project. </p>
-							<p>I instead decided to develop an automated data pipeline that would read, classify, and and automatically create this sankey graph from my job application inbox. To fully flesh out and complete this project I had to use tools like Python, SKLearn libraries and a PostgreSQL database. This project allowed me to apply the knowledge I learened about database creation, and management from my degree, while also continuing to teach myself how to use Python.</p>
+							<h1>Job Application Tracker</h1>
+							<figure class="half" style="display:flex">
+								<img style="width:1000px" src="images/Job_Applications.jpg">
+								<img style="width:450px" src="images/Form.PNG">
+							</figure>
+							<p></p>
+							<p>To serve as an alternative to my Email-To-Sankey project, I created a simple Microsoft Form that a user can answer after finishing a job application. It asks simple, but important questions that could not be tracked in the other project. This allows for a more personal assessment of the jobs that they are applying to. This more personal assessment will allow the user to change up their job application strategy if they find more success in one week compared to another. </p>
+							<p>Once the form is submitted, the answers are loaded into a Microsoft Sheet. This serves as our pseudo-database. From here the data is automatically sent to the PowerBI Dashboard. In this dashboard there is also a calendar database that has a relationship with the form response table to account for days where no applications were sent out. On top of this it allows our dashboard to be organized by week. The dashboard updates every week and, my next step of this project is to implement a Power Automate feature that will capture a screenshot, or export the dashboard before the new week is created.</p>
+							<p>Everything in the project was created by me, from the form, connections, and the PowerBI Template/Dashboard.</p>
 						</div>
 					</div>
 
@@ -61,7 +62,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								
+							
 							</section>
 							<section>
 								
